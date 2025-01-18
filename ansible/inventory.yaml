@@ -1,0 +1,12 @@
+all:
+  hosts:
+    vm-proxy-1:
+      ansible_host: 84.201.132.166
+    vm-service-instance-1:
+      ansible_host: 51.250.88.173
+    vm-service-instance-2:
+      ansible_host: 51.250.88.21
+  vars:
+    ansible_user: s1429401
+    ansible_ssh_private_key_file: ~/.ssh/id_ed25519
+    ansible_become: true

@@ -1,0 +1,16 @@
+---
+- name: Install basic packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - net-tools
+    - dnsutils
+    - wget
+    - curl
+    - mc
+    - rsync
+- name: Change hostname
+  hostname:
+    name: "{{ inventory_hostname }}"
+

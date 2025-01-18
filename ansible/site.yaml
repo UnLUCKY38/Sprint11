@@ -1,0 +1,16 @@
+---
+- name: Configure VMs
+  hosts: all
+  roles:
+    - role: vm_setup
+
+- name: Configure Proxy VM
+  hosts: vm-proxy-1
+  roles:
+    - role: proxy
+
+- name: Configure Web VMs
+  hosts: vm-service-instance-1,vm-service-instance-2
+  roles:
+    - role: web
+

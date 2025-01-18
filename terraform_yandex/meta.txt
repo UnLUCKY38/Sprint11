@@ -1,0 +1,8 @@
+users:
+  - name: s1429401
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    passwd: 1122
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILat20DGf5VRxOUjPIMQoZksZZcZWf/e/+2yi+mgBQMQ root@debian-yacloud
